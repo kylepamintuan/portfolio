@@ -37,8 +37,8 @@
  *    ## home animations
  *  # about
  *    ## about process
- *  # services
- *    ## services list
+ *  # skills
+ *    ## skills list
  *  # works
  *    ## bricks/masonry
  *  # testimonials
@@ -1237,7 +1237,7 @@ input::-moz-focus-inner {
 
 .subhead {
   font-family: "metropolis-semibold", sans-serif;
-  font-size: 1.6rem;
+  font-size: 3rem;
   line-height: 1.3125;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
@@ -2372,17 +2372,17 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # services
+ * # skills
  *
  * ------------------------------------------------------------------- */
-.s-services{
+.s-skills {
   padding-top: 18rem;
   padding-bottom: 18rem;
   color: #808080;
   background-color: transparent;
   position: relative;
 }
-.s-services::before {
+.s-skills::before {
   display: block;
   content: "";
   position: absolute;
@@ -2393,29 +2393,33 @@ html.no-csstransitions .home-content__main {
   opacity: 0.65;
   background-color: #000000;
 }
-.service-text h3 {
+.skill-text h3 {
   color: rgba(255, 255, 255, 0.9);
 }
-.service-icon, .service-text{
+.skill-icon, .skill-text{
   display: flex;
   justify-content: center;
+}
+.skill-png {
+    height: 40%;
+    width: 40%;
 }
 
 
 /* ------------------------------------------------------------------- 
- * ## services list
+ * ## skills list
  * ------------------------------------------------------------------- */
-.services-list {
+.skills-list {
   margin-top: 6rem;
 }
-.services-list .service-item {
+.skills-list .skill-item {
   margin-bottom: 1.5rem;
 }
-.services-list .service-item h3 {
+.skills-list .skill-item h3 {
   margin-top: 0;
   margin-bottom: 1.8rem;
 }
-.services-list .service-icon {
+.skills-list .skill-icon {
   color: #663300;
   font-size: 4.8rem;
 }
@@ -2423,48 +2427,48 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * services
+ * skills
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-  .s-services {
+  .s-skills {
     padding-top: 15rem;
     padding-bottom: 15rem;
   }
 
-  .services-list [class*="col-"]:nth-child(2n + 1) {
+  .skills-list [class*="col-"]:nth-child(2n + 1) {
     padding-right: 30px;
   }
-  .services-list [class*="col-"]:nth-child(2n + 2) {
+  .skills-list [class*="col-"]:nth-child(2n + 2) {
     padding-left: 30px;
   }
 }
 @media only screen and (max-width: 800px) {
-  .s-services {
+  .s-skills {
     padding-top: 12rem;
     padding-bottom: 12rem;
   }
 
-  .services-list {
+  .skills-list {
     margin-top: 3rem;
   }
-  .services-list .service-icon {
+  .skills-list .skill-icon {
     font-size: 4.5rem;
   }
-  .services-list [class*="col-"]:nth-child(n) {
+  .skills-list [class*="col-"]:nth-child(n) {
     padding: 0 15px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .services-list [class*="col-"]:nth-child(n) {
+  .skills-list [class*="col-"]:nth-child(n) {
     padding: 0 10px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .s-services {
+  .s-skills {
     padding-top: 9.6rem;
   }
 
-  .services-list [class*="col-"]:nth-child(n) {
+  .skills-list [class*="col-"]:nth-child(n) {
     padding: 0;
   }
 }
