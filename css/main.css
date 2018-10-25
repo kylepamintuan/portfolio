@@ -186,24 +186,24 @@ p img {
 
 p.lead {
   font-family: "metropolis-regular", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.75;
-  margin-bottom: 3.6rem;
+  margin-bottom: 2rem;
   color: rgba(85, 85, 85, 0.95);
 }
 @media only screen and (max-width: 1200px) {
   p.lead {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
 }
 @media only screen and (max-width: 1000px) {
   p.lead {
-    font-size: 2.1rem;
+    font-size: 1.6rem;
   }
 }
 @media only screen and (max-width: 800px) {
   p.lead {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1223,13 +1223,13 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .display-1 {
   font-family: "domine-bold", sans-serif;
-  font-size: 6rem;
+  font-size: 5.8rem;
   line-height: 1.3;
   letter-spacing: 0;
   color: #000000;
   letter-spacing: -0.03rem;
   margin-top: 0;
-  margin-bottom: 4.8rem;
+  margin-bottom: 3rem;
 }
 .display-1--light {
   color: #ffffff;
@@ -1243,7 +1243,7 @@ input::-moz-focus-inner {
   letter-spacing: 0.25rem;
   color: #663300;
   margin-top: 0;
-  margin-bottom: 2.1rem;
+  margin-bottom: 2rem;
 }
 .subhead::before {
   content: "/ ";
@@ -1670,7 +1670,7 @@ input::-moz-focus-inner {
 .s-home {
   width: 100%;
   height: 100%;
-  min-height: 786px;
+  min-height: 680px;
   background-color: transparent;
   position: relative;
   display: table;
@@ -2164,7 +2164,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .s-home {
-    min-height: 642px;
+    min-height: 536px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -2177,7 +2177,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 400px) {
   .s-home {
-    min-height: 630px;
+    min-height: 524px;
   }
 
   .home-content h1 {
@@ -2215,8 +2215,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background-color: #ffffff;
   position: relative;
 }
@@ -2284,8 +2284,8 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
   .s-about {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .process__vline-left {
@@ -2311,8 +2311,8 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 800px) {
   .s-about {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .process {
@@ -2342,7 +2342,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 400px) {
   .s-about {
-    padding-top: 9.6rem;
+    padding-top: 6rem;
   }
 
   .process h4 {
@@ -2376,8 +2376,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-skills {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   color: #808080;
   background-color: transparent;
   position: relative;
@@ -2394,6 +2394,7 @@ html.no-csstransitions .home-content__main {
   background-color: #000000;
 }
 .skill-text h3 {
+  padding-top: 1rem;
   color: rgba(255, 255, 255, 0.9);
 }
 .skill-icon, .skill-text{
@@ -2410,7 +2411,7 @@ html.no-csstransitions .home-content__main {
  * ## skills list
  * ------------------------------------------------------------------- */
 .skills-list {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 .skills-list .skill-item {
   margin-bottom: 1.5rem;
@@ -2431,8 +2432,8 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
   .s-skills {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .skills-list [class*="col-"]:nth-child(2n + 1) {
@@ -2444,8 +2445,8 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 800px) {
   .s-skills {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .skills-list {
@@ -2465,7 +2466,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 400px) {
   .s-skills {
-    padding-top: 9.6rem;
+    padding-top: 6rem;
   }
 
   .skills-list [class*="col-"]:nth-child(n) {
@@ -2481,7 +2482,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-works {
   background: #ffffff;
-  padding: 18rem 0 24rem;
+  padding: 6rem 0 6rem;
   position: relative;
 }
 
@@ -2490,7 +2491,7 @@ html.no-csstransitions .home-content__main {
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
 .masonry-wrap {
-  margin-top: 6rem;
+  margin-top: 3rem;
   max-width: none;
   width: 1380px;
 }
@@ -2697,7 +2698,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1200px) {
   .s-works {
-    padding: 15rem 0 22.2rem;
+    padding: 6rem 0 6rem;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -2713,7 +2714,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 800px) {
   .s-works {
-    padding: 12rem 0 21rem;
+    padding: 6rem 0 6rem;
   }
 
   .masonry-wrap {
@@ -2728,7 +2729,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 400px) {
   .s-works {
-    padding: 9.6rem 0 21rem;
+    padding: 6rem 0 6rem;
   }
 
   .masonry-wrap {
@@ -3001,8 +3002,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-  padding-top: 21rem;
-  padding-bottom: 10.2rem;
+  padding-top: 6rem;
+  padding-bottom: 9rem;
   color: #808080;
   position: relative;
 }
@@ -3028,8 +3029,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-main {
-  margin-top: 14.4rem;
-  margin-bottom: 4.8rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .contact-email {
@@ -3259,11 +3260,11 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1200px) {
   .s-contact {
-    padding-top: 15rem;
+    padding-top: 6rem;
   }
 
   .contact-main {
-    margin-top: 13.2rem;
+    margin-top: 4rem;
   }
 
   .contact-email {
@@ -3305,7 +3306,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 800px) {
   .s-contact {
-    padding-top: 12rem;
+    padding-top: 6rem;
     padding-bottom: 9rem;
   }
 
@@ -3349,11 +3350,11 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 600px) {
   .s-contact {
-    padding-bottom: 6rem;
+    padding-bottom: 9rem;
   }
 
   .contact-main {
-    margin-top: 12rem;
+    margin-top: 4rem;
   }
 
   .contact-email {
@@ -3401,12 +3402,12 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 400px) {
   .s-contact {
-    padding-top: 9.6rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 9rem;
   }
 
   .contact-main {
-    margin-top: 9.6rem;
+    margin-top: 4rem;
   }
 
   .contact-secondary {
