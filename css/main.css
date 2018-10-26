@@ -695,7 +695,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  color: #000000;
+  color: #ffffff;
 }
 
 label,
@@ -3125,29 +3125,43 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
- * ## subscribe
+ * ## contact form
  * ------------------------------------------------------------------- */
+#contact-button a {
+  color: #ffffff;
+}
 .contact-subscribe {
   margin: 0;
   padding: 0;
   position: relative;
 }
-
+.mc-form::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 80px;
+  background-color: #663300;
+  position: absolute;
+  top: -5%;
+  left: 2%;
+}
 .mc-form {
   margin-top: 2.1rem;
   width: 100%;
 }
-.mc-form input[type="email"] {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: rgba(255, 255, 255, 0.5);
+.mc-form input, .mc-form textarea {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.mc-form input {
+  color:#994d00;
   width: 100%;
   height: 5.4rem;
   padding: 1.2rem 150px 1.2rem 20px;
   margin-bottom: 1.8rem;
   border: none;
 }
-.mc-form input[type="email"]:focus {
-  color: #ffffff;
+.mc-form input[type="email"]:focus, .mc-form input[type="text"]:focus {
+  color:#ffffff;
 }
 .mc-form input[type="email"]::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.2);
@@ -3171,14 +3185,14 @@ html.no-csstransitions .home-content__main {
   background: #663300;
   border-color: #663300;
   padding: 0 15px;
-  position: absolute;
-  top: 0;
-  right: 0;
+  width: 20%;
+  bottom: 0;
+  left: 0;
 }
 .mc-form label {
   color: #ffffff;
   font-family: "metropolis-semibold", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   padding: 0 2rem;
 }
 .mc-form label i {
