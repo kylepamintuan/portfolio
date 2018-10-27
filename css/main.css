@@ -3032,7 +3032,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-contact {
   padding-top: 11rem;
-  padding-bottom: 11rem;
+  padding-bottom: 3rem;
   color: #808080;
   position: relative;
 }
@@ -3056,12 +3056,10 @@ html.no-csstransitions .home-content__main {
 .s-contact a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 .contact-main {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-
 .contact-email {
   display: inline-block;
   font-family: "metropolis-light", sans-serif;
@@ -3081,14 +3079,12 @@ html.no-csstransitions .home-content__main {
   top: 0;
   left: 0;
 }
-
 .contact-number {
   font-family: "metropolis-light", sans-serif;
   font-size: 3rem;
   line-height: 1.7;
   display: block;
 }
-
 .contact-address {
   font-family: "metropolis-regular", sans-serif;
   font-size: 2.8rem;
@@ -3105,19 +3101,31 @@ html.no-csstransitions .home-content__main {
   display: inline-block;
   margin: 0 0 0 0.3rem;
   font-size: 3rem;
+  padding-top: 4rem;
+}
+#my-dev-story {
+  padding-bottom: 4rem;
+}
+.contact-secondary::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 200px;
+  background-color: #663300;
+  position: absolute;
 }
 .contact-social li {
-  margin-right: 15px;
+  margin-right: 25px;
   padding-left: 0;
   display: inline-block;
 }
 .contact-social li a {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(102, 51, 0, 0.7);
   border: none !important;
 }
 .contact-social li a:hover,
 .contact-social li a:focus {
-  color: #ffffff;
+  color: #663300;
 }
 .contact-social li:last-child {
   margin: 0;
@@ -3134,16 +3142,6 @@ html.no-csstransitions .home-content__main {
   margin: 0;
   padding: 0;
   position: relative;
-}
-.mc-form::before {
-  content: "";
-  display: block;
-  height: 1px;
-  width: 80px;
-  background-color: #663300;
-  position: absolute;
-  top: -5%;
-  left: 2%;
 }
 .mc-form {
   margin-top: 2.1rem;
@@ -3204,7 +3202,7 @@ html.no-csstransitions .home-content__main {
  * ## copyright
  * ------------------------------------------------------------------- */
 .cl-copyright {
-  margin-top: 2.1rem;
+  margin-top: 8rem;
 }
 
 .cl-copyright span {
@@ -3350,7 +3348,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 800px) {
   .s-contact {
     padding-top: 11rem;
-    padding-bottom: 11rem;
+    padding-bottom: 3rem;
   }
 
   .contact-secondary,
@@ -3393,7 +3391,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 600px) {
   .s-contact {
-    padding-bottom: 11rem;
+    padding-bottom: 3rem;
   }
 
   .contact-main {
@@ -3446,7 +3444,7 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width: 400px) {
   .s-contact {
     padding-top: 11rem;
-    padding-bottom: 11rem;
+    padding-bottom: 3rem;
   }
 
   .contact-main {
