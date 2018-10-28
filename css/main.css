@@ -186,6 +186,7 @@ p img {
 
 p.lead {
   font-family: "metropolis-regular", sans-serif;
+  text-align: center;
   font-size: 2rem;
   line-height: 1.75;
   margin-bottom: 2rem;
@@ -1225,6 +1226,7 @@ input::-moz-focus-inner {
   font-family: "domine-bold", sans-serif;
   font-size: 5.8rem;
   line-height: 1.3;
+  text-align: center;
   letter-spacing: 0;
   color: #000000;
   letter-spacing: -0.03rem;
@@ -1241,13 +1243,33 @@ input::-moz-focus-inner {
   line-height: 1.3125;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
+  text-align: center;
   color: #663300;
   margin-top: 0;
   margin-bottom: 2rem;
 }
-.subhead::before {
-  content: "/ ";
+.subhead--light {
+  color: rgb(102, 51, 0);
 }
+.subhead::before {
+  content: "";
+  display: inline-block;
+  width: 8rem;
+  height: 0.8px;
+  background-color: #663300;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+.subhead::after {
+  content: "";
+  display: inline-block;
+  width: 8rem;
+  height: 0.8px;
+  background-color: #663300;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -1726,20 +1748,27 @@ input::-moz-focus-inner {
   line-height: 1.421;
   color: rgba(255, 255, 255, 0.8);
   margin-top: 2.4rem;
-  padding-left: 10rem;
+  /* padding-left: 10rem; */
   position: relative;
 }
 .home-content h1 + p::before {
   content: "";
-  display: block;
-  width: 6.5rem;
-  height: 1px;
+  display: inline-block;
+  width: 8rem;
+  height: 0.9px;
   background-color: #663300;
-  position: absolute;
-  left: 6px;
-  top: 2.7rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
-
+.home-content h1 + p::after {
+  content: "";
+  display: inline-block;
+  width: 8rem;
+  height: 0.9px;
+  background-color: #663300;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
 .home-content__main {
   padding-top: 15rem;
   padding-right: 20rem;
@@ -2525,7 +2554,7 @@ html.no-csstransitions .home-content__main {
 .item-folio__thumb a::before {
   z-index: 1;
   display: block;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
   content: "";
   opacity: 0;
   visibility: hidden;
@@ -2537,37 +2566,13 @@ html.no-csstransitions .home-content__main {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.item-folio__thumb a::after {
-  z-index: 1;
-  content: "...";
-  font-family: georgia, serif;
-  font-size: 3rem;
-  color: #000000;
-  display: block;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  margin-left: -15px;
-  margin-top: -15px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  text-align: center;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
 
 .item-folio__text {
   z-index: 2;
   position: absolute;
-  left: 0;
-  bottom: 3.6rem;
-  padding: 0 3rem;
+  width: 100%;
+  top: -3rem;
+  text-align: center;
   -webkit-transform: translate3d(0, -100%, 0);
   -ms-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0);
@@ -2579,8 +2584,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__title {
   color: #000000;
-  font-size: 1.8rem;
-  margin: 0;
+  font-size: 2.5rem;
 }
 
 .item-folio__cat {
@@ -2594,67 +2598,29 @@ html.no-csstransitions .home-content__main {
   display: none;
 }
 
-.item-folio__project-link {
+.item-folio__project-links {
   z-index: 500;
-  display: block;
-  font-family: "metropolis-semibold", sans-serif;
-  font-size: 1.3rem;
-  color: #ffffff;
-  background-color: #000000;
-  padding: 0.6rem 1.2rem;
   position: absolute;
-  top: 3rem;
-  left: 3rem;
+  bottom: 3rem;
+  width: 100%;
+  text-align: center;
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  -ms-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.item-folio__project-link::before {
-  display: block;
-  content: "";
-  height: 1px;
-  width: 3rem;
-  background-color: white;
-  position: absolute;
-  top: 50%;
-  left: -3rem;
+.item-folio__project-links a {
+  color: black;
+  padding: 0 1.5rem;
+  position: relative;
+  display: inline-block;
 }
-.item-folio__project-link_right {
-  z-index: 500;
-  display: block;
-  font-family: "metropolis-semibold", sans-serif;
-  font-size: 1.3rem;
-  color: #ffffff;
-  background-color: #000000;
-  padding: 0.6rem 1.2rem;
-  position: absolute;
-  top: 3rem;
-  right: 3rem;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translate3d(100%, 0, 0);
-  -ms-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-}
-.item-folio__project-link_right::before {
-  display: block;
-  content: "";
-  height: 1px;
-  width: 3rem;
-  background-color: white;
-  position: absolute;
-  top: 50%;
-  right: -3rem;
-}
-.item-folio__project-link:hover,
-.item-folio__project-link:focus,
-.item-folio__project-link:active,
-.item-folio__project-link_right:hover,
-.item-folio__project-link_right:focus,
-.item-folio__project-link_right:active {
-  background-color: #663300;
+.item-folio__project-links a:hover,
+.item-folio__project-links a:focus,
+.item-folio__project-links a:active {
   color: #ffffff;
 }
 
@@ -2675,7 +2641,7 @@ html.no-csstransitions .home-content__main {
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
-.item-folio:hover .item-folio__project-link, .item-folio:hover .item-folio__project-link_right {
+.item-folio:hover .item-folio__project-links {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translate3d(0, 0, 0);
@@ -3096,6 +3062,11 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
  * ## contact social
  * ------------------------------------------------------------------- */
+ .contact-secondary {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+ }
 .contact-social {
   list-style: none;
   display: inline-block;
