@@ -594,21 +594,21 @@
         </div> <!-- end section-header -->
 
         <div class="row" data-aos="fade-up">
-            <form id="mc-form" class="group mc-form" accept-charset="UTF-8" action="https://usebasin.com/f/836f6ba7edb7" method="POST">
+            <form id="mc-form" class="group mc-form" accept-charset="UTF-8" action="https://usebasin.com/f/836f6ba7edb7" enctype="multipart/form-data" method="POST">
                 <div class="col-1-2">
-                    <label for="contactForm">Name</label>
-                    <input type="text" placeholder="John Doe" id="nameInput">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="John Doe" id="nameInput">
                 </div>
                 <div class="col-1-2">
-                    <label for="contactForm">Email</label>
-                    <input type="email" placeholder="johndoe@mailbox.com" id="emailInput">
+                    <label for="email-address">Email</label>
+                    <input type="email" name="email" placeholder="johndoe@mailbox.com" id="emailInput">
                 </div>
                 <div class="col-full">
-                    <label for="contactForm">Subject</label>
-                    <input class="full-width" type="text" placeholder="Job Opportunity" id="subjectInput">
+                    <label for="subject">Subject</label>
+                    <input class="full-width" type="text" name="subject" placeholder="Job Opportunity" id="subjectInput">
 
-                    <label for="contactForm">Message</label>
-                    <textarea class="full-width" placeholder="Your message" id="messageInput"></textarea>
+                    <label for="message">Message</label>
+                    <textarea class="full-width" name="message" placeholder="Your message" id="messageInput"></textarea>
                 
                     <input class="btn--primary" type="submit" value="Submit">
                 </div>
