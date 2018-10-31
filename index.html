@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet">
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 
 <body id="top">
@@ -20,13 +21,13 @@
     <!-- header
     ================================================== -->
     <header class="s-header">
-
-        <!-- 
+        
+        <!--
         <div class="header-logo">
             <a class="site-logo" href="index.html">
                 <img src="images/logo.svg" alt="Homepage">
             </a>
-        </div> <!- - end header-logo - -> 
+        </div> <!- - end header-logo  - ->
         -->
 
         <nav class="header-nav">
@@ -44,25 +45,23 @@
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
                 </ul>
     
-                <!-- 
                 <ul class="header-nav__social">
                     <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                        <a class="smoothscroll"  href="#contact" title="contact"><i class="far fa-comment fa-lg"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/kylepamintuan/" target="_blank" title="linkedin"><i class="fab fa-linkedin fa-lg"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/kylepamintuan" target="_blank"><i class="fab fa-github fa-lg" title="github"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fab fa-behance"></i></a>
+                        <a href="mailto:kylepamintuan@gmail.com" target="_blank" title="email"><i class="far fa-envelope fa-lg"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fab fa-dribbble"></i></a>
+                        <a href="readme.txt" title="resume" download><i class="far fa-file-pdf fa-lg"></i></a>
                     </li>
                 </ul> 
-                -->
 
             </div> <!-- end header-nav__content -->
 
@@ -83,19 +82,12 @@
 
         <div class="home-content">
 
-            <div class="row home-content__main">
+            <div class="row home-content__main text-center">
                 <h1>Kyle Pamintuan</h1>
                 <p>Web Developer</p>
             </div> <!-- end home-content__main -->
 
         </div> <!-- end home-content -->
-
-        <ul class="home-sidelinks">
-            <li><a class="smoothscroll" href="#about">About</a></li>
-            <li><a class="smoothscroll" href="#skills">Skills</a></li>
-            <li><a class="smoothscroll" href="#works">Works</a></li>
-            <li><a  class="smoothscroll" href="#contact">Contact</a></li>
-        </ul> <!-- end home-sidelinks -->
 
         <!-- 
         <ul class="home-social">
@@ -134,11 +126,12 @@
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row" data-aos="fade-up">
+        <div class="row" data-aos="fade-up" id="my-dev-story">
             <div class="col-full">
                 <p class="lead">
                     Growing up I've always taken interest in art, design and things relating to problem-solving. Thus, after taking my first programming course in 2013 I knew that designing and building apps were things that I naturally enjoyed doing and so I decided at that point to continue down that path. 
-                    Since then I've gained a lot of theoretical and practical knowledge of programming such as the syntax/semantics of various programming languages, what goes on behind the code, data structures, algorithms, agile methodology, version control, debugging, full stack web development and so on.<br><br>
+                    Since then I've gained a lot of theoretical and practical knowledge of programming such as the syntax/semantics of various programming languages, what goes on behind the code, data structures, algorithms, agile methodology, version control, debugging, full-
+                    stack web development and so on.<br><br>
                     
                     Now in 2018 I'm proud to say that I've completed a CS degree program at CSULB as well as a web development program at LearningFuze. I believe the foundational programming knowledge I learned from my CS degree combined with the development tools and techniques I acquired from my coding 
                     bootcamp has prepared me well for shaping the future of web development.<br><br>
@@ -147,6 +140,28 @@
                 </p>
             </div>
         </div> <!-- end about-desc -->
+
+        <div class="row" data-aos="fade-up" id="contact-container">
+            <div class="col-full contact-secondary">
+                <ul class="contact-social">
+                    <li>
+                        <a class="smoothscroll"  href="#contact" title="contact"><i class="far fa-comment fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/kylepamintuan/" target="_blank" title="linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kylepamintuan" target="_blank"><i class="fab fa-github fa-2x" title="github"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:kylepamintuan@gmail.com" target="_blank" title="email"><i class="far fa-envelope fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="readme.txt" title="resume" download><i class="far fa-file-pdf fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div> <!-- end contact-secondary -->
+        </div> <!-- end row -->
 
     </section> <!-- end s-about -->
 
@@ -157,7 +172,7 @@
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead ">Skills</h3>
+                <h3 class="subhead subhead--light">Skills</h3>
             </div>
         </div> <!-- end section-header -->
 
@@ -410,8 +425,8 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-lamp.jpg" class="thumb-link" title="Lamp" data-size="1050x700">
-                                <img src="images/portfolio/lamp.jpg" srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
+                            <a href="images/portfolio/gallery/g-lamp.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/lamp_v2.jpg" alt="">
                             </a>
                         </div>
 
@@ -419,8 +434,11 @@
                             <h3 class="item-folio__title">Lamp</h3>
                         </div>
 
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">GitHub</a>
-                        <a href="https://www.behance.net/" class="item-folio__project-link_right" title="GitHub link">Live</a>
+                        <div class="item-folio__project-links">
+                            <a href="https://www.behance.net/" title="info"><i class="fas fa-info-circle fa-lg"></i></a>
+                            <a href="https://www.behance.net/" title="live"><i class="fas fa-link fa-lg"></i></a>
+                            <a href="https://www.behance.net/" title="github"><i class="fab fa-github fa-lg"></i></a>
+                        </div>
 
                         <div class="item-folio__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
@@ -433,8 +451,8 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-salad.jpg" class="thumb-link" title="Salad" data-size="1050x700">
-                                <img src="images/portfolio/salad.jpg" srcset="images/portfolio/salad.jpg 1x, images/portfolio/salad@2x.jpg 2x" alt="">
+                            <a href="images/portfolio/gallery/g-salad.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/salad.jpg" alt="">
                             </a>
                         </div>
 
@@ -442,55 +460,11 @@
                             <h3 class="item-folio__title">Salad</h3>
                         </div>
 
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">GitHub</a>
-                        <a href="https://www.behance.net/" class="item-folio__project-link_right" title="GitHub link">Live</a>
-
-                        <span class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </span>
-
-                    </div> <!-- end item-folio -->
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                <img src="images/portfolio/woodcraft.jpg" srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
-                            </a>
+                        <div class="item-folio__project-links">
+                            <a href="https://www.behance.net/" title="info"><i class="fas fa-info-circle fa-lg"></i></a>
+                            <a href="https://www.behance.net/" title="live"><i class="fas fa-link fa-lg"></i></a>
+                            <a href="https://www.behance.net/" title="github"><i class="fab fa-github fa-lg"></i></a>
                         </div>
-
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">Woodcraft</h3>
-                        </div>
-
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">GitHub</a>
-                        <a href="https://www.behance.net/" class="item-folio__project-link_right" title="GitHub link">Live</a>
-
-                        <span class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </span>
-
-                    </div> <!-- end item-folio -->
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-liberty.jpg" class="thumb-link" title="Liberty" data-size="1050x700">
-                                <img src="images/portfolio/liberty.jpg"
-                                     srcset="images/portfolio/liberty.jpg 1x, images/portfolio/liberty@2x.jpg 2x" alt="">
-                            </a>
-                        </div>
-
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">Liberty</h3>
-                        </div>
-
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">GitHub</a>
-                        <a href="https://www.behance.net/" class="item-folio__project-link_right" title="GitHub link">Live</a>
 
                         <span class="item-folio__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
@@ -504,8 +478,8 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-fuji.jpg" class="thumb-link" title="Fuji" data-size="1050x700">
-                                <img src="images/portfolio/fuji.jpg" srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x" alt="">
+                            <a href="images/portfolio/gallery/g-fuji.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/fuji.jpg" alt="">
                             </a>
                         </div>
 
@@ -513,8 +487,11 @@
                             <h3 class="item-folio__title">Fuji</h3>
                         </div>
 
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">GitHub</a>
-                        <a href="https://www.behance.net/" class="item-folio__project-link_right" title="GitHub link">Live</a>
+                        <div class="item-folio__project-links">
+                            <a href="https://www.behance.net/" title="info"><i class="fas fa-info-circle fa-lg"></i></a>
+                            <a href="https://www.behance.net/" title="live"><i class="fas fa-link fa-lg"></i></a>
+                            <a href="https://www.behance.net/" title="github"><i class="fab fa-github fa-lg"></i></a>
+                        </div>
 
                         <span class="item-folio__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
@@ -527,8 +504,8 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                <img src="images/portfolio/shutterbug.jpg" srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                            <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/shutterbug.jpg" alt="">
                             </a>
                         </div>
 
@@ -536,8 +513,11 @@
                             <h3 class="item-folio__title">Lady Shutterbug</h3>
                         </div>
 
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">GitHub</a>
-                        <a href="https://www.behance.net/" class="item-folio__project-link_right" title="GitHub link">Live</a>
+                        <div class="item-folio__project-links">
+                            <a href="https://www.behance.net/" title="info"><i class="fas fa-info-circle fa-lg"></i></a>
+                            <a href="https://www.behance.net/" title="live"><i class="fas fa-link fa-lg"></i></a>
+                            <a href="https://www.behance.net/" title="github"><i class="fab fa-github fa-lg"></i></a>
+                        </div>
 
                         <span class="item-folio__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
@@ -608,64 +588,31 @@
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead ">Contact</h3>
-                <h1 class="display-1 display-1--light">Get in touch and let's make something great together.</h1>
+                <h3 class="subhead subhead--light">Contact</h3>
+                <h1 class="display-1 display-1--light">Let's make something great together.</h1>
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row">
+        <div class="row" data-aos="fade-up">
+            <form id="mc-form" class="group mc-form" accept-charset="UTF-8" action="https://usebasin.com/f/836f6ba7edb7" method="POST">
+                <div class="col-1-2">
+                    <label for="contactForm">Name</label>
+                    <input type="text" placeholder="John Doe" id="nameInput">
+                </div>
+                <div class="col-1-2">
+                    <label for="contactForm">Email</label>
+                    <input type="email" placeholder="johndoe@mailbox.com" id="emailInput">
+                </div>
+                <div class="col-full">
+                    <label for="contactForm">Subject</label>
+                    <input class="full-width" type="text" placeholder="Job Opportunity" id="subjectInput">
 
-            <div class="col-full contact-main" data-aos="fade-up">
-                <p>
-                <a href="mailto:#0" class="contact-email">hello@transcend-studio.com</a>
-                <span class="contact-number">+1 (917) 123 456  /  +1 (917) 333 987</span>
-                </p>
-            </div> <!-- end contact-main -->
-
-        </div> <!-- end row -->
-
-        <div class="row">
-
-            <div class="col-five tab-full contact-secondary" data-aos="fade-up">
-                <h3 class="subhead ">Where To Find Us</h3>
-
-                <p class="contact-address">
-                    1600 Amphitheatre Parkway<br>
-                    Mountain View, CA<br>
-                    94043 US
-                </p>
-            </div> <!-- end contact-secondary -->
-
-            <div class="col-five tab-full contact-secondary" data-aos="fade-up">
-                <h3 class="subhead ">Follow Us</h3>
-
-                <ul class="contact-social">
-                    <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-dribbble"></i></a>
-                    </li>
-                </ul> <!-- end contact-social -->
-
-                <div class="contact-subscribe">
-                    <form id="mc-form" class="group mc-form" novalidate="true">
-                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-                        <input type="submit" name="subscribe" value="Subscribe">
-                        <label for="mc-email" class="subscribe-message"></label>
-                    </form>
-                </div> <!-- end contact-subscribe -->
-            </div> <!-- end contact-secondary -->
-
+                    <label for="contactForm">Message</label>
+                    <textarea class="full-width" placeholder="Your message" id="messageInput"></textarea>
+                
+                    <input class="btn--primary" type="submit" value="Submit">
+                </div>
+            </form>
         </div> <!-- end row -->
 
         <div class="row">
@@ -684,7 +631,7 @@
 
     </section> <!-- end s-contact -->
 
-
+    
     <!-- photoswipe background
     ================================================== -->
     <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
