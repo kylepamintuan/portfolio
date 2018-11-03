@@ -1232,6 +1232,7 @@ input::-moz-focus-inner {
   letter-spacing: -0.03rem;
   margin-top: 0;
   margin-bottom: 3rem;
+  position: relative;
 }
 .display-1--light {
   color: #ffffff;
@@ -1247,6 +1248,7 @@ input::-moz-focus-inner {
   color: #663300;
   margin-top: 0;
   margin-bottom: 2rem;
+  position: relative;
 }
 .subhead--light {
   color: rgb(102, 51, 0);
@@ -1319,35 +1321,35 @@ input::-moz-focus-inner {
     font-size: 3.3rem;
   }
 
-  .subhead {
+  /* .subhead {
     font-size: 1.4rem;
   }
   .subhead::before, .subhead::after {
     width: 5rem;
     margin-bottom: 0.5rem;
-  }
+  } */
 }
 @media only screen and (max-width: 400px) {
   .display-1 {
     font-size: 3rem;
   }
 
-  .subhead {
-    font-size: 1.2rem;
+  /* .subhead {
+    font-size: 2rem;
   }
   .subhead::before, .subhead::after {
-    width: 3.3rem;
+    width: 6rem;
     margin-bottom: 0.5rem;
-  }
+  } */
 }
 @media only screen and (max-width: 300px) {
-  .subhead {
+  /* .subhead {
     font-size: 1rem;
   }
   .subhead::before, .subhead::after {
     width: 2.5rem;
     margin-bottom: 0.5rem;
-  }
+  } */
 }
 
 
@@ -2444,6 +2446,7 @@ html.no-csstransitions .home-content__main {
   color: #808080;
   background-color: transparent;
   position: relative;
+  z-index: 1;
 }
 .s-skills::before {
   display: block;
@@ -2453,14 +2456,18 @@ html.no-csstransitions .home-content__main {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.65;
+  opacity: 0.8;
   background-color: #000000;
+}
+.s-skills .subhead {
+  z-index: 2;
 }
 .skill-text h3 {
   font-family: "metropolis-thin", sans-serif;
   font-weight: lighter;
   padding-top: 1rem;
   color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
 }
 .skill-icon, .skill-text{
   display: flex;
@@ -2470,6 +2477,7 @@ html.no-csstransitions .home-content__main {
 .skill-png {
     height: 40%;
     width: 40%;
+    z-index: 2;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3031,6 +3039,7 @@ html.no-csstransitions .home-content__main {
   padding-bottom: 3rem;
   color: #808080;
   position: relative;
+  z-index: 1;
 }
 .s-contact::before {
   display: block;
@@ -3042,6 +3051,9 @@ html.no-csstransitions .home-content__main {
   height: 100%;
   opacity: 0.65;
   background-color: #000000;
+}
+.s-contact .subhead, .s-contact .display-1, .s-contact .mc-form {
+  z-index: 2;
 }
 .s-contact a {
   color: #ffffff;
@@ -3147,6 +3159,7 @@ html.no-csstransitions .home-content__main {
 .mc-form {
   margin-top: 2.1rem;
   width: 100%;
+  position: relative;
 }
 .mc-form input, .mc-form textarea {
   font-family: "metropolis-extralight", sans-serif;
