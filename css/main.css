@@ -3144,6 +3144,21 @@ html.no-csstransitions .home-content__main {
   margin: 0;
 }
 
+.s-contact .contact-secondary {
+  position: relative;
+  z-index: 2;
+}
+.s-contact .contact-secondary::before {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.s-contact .contact-social li a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.s-contact .contact-social li a:hover,
+.s-contact .contact-social li a:focus {
+  color: #663300;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## contact form
@@ -3442,6 +3457,10 @@ html.no-csstransitions .home-content__main {
     font-size: 2rem;
   }
 
+  .s-contact .contact-social {
+    padding-top: 2rem;
+  }
+
   .cl-go-top {
     right: 25px;
     bottom: 7.2rem;
@@ -3480,7 +3499,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .cl-go-top {
-    bottom: 12rem;
+    bottom: 9rem;
     right: 50%;
     margin-right: -24px;
   }
