@@ -2561,14 +2561,16 @@ html.no-csstransitions .home-content__main {
   margin-bottom: 1.5rem;
 }
 .pswp__caption p {
-  font-family: "metropolis-extralight", sans-serif;
+  font-family: "metropolis-thin", sans-serif;
   font-size: 1.7rem;
   margin-bottom: 1.5rem;
 }
 .pswp__caption .project-links {
-  font-family: "metropolis-regular", sans-serif;
+  font-family: "metropolis-medium", sans-serif;
   font-size: 1.7rem;
   color: #663300;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 
