@@ -3144,7 +3144,8 @@ html.no-csstransitions .home-content__main {
   content: "";
   display: block;
   height: 1px;
-  width: 200px;
+  width: 30%;
+  min-width: 250px;
   background-color: #663300;
   position: absolute;
 }
