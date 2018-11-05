@@ -102,6 +102,7 @@
         var items = [],
             $pswp = $('.pswp')[0],
             $folioItems = $('.item-folio');
+            // $projectInfoButtons = $('.project-info-button');
 
         // get items
         $folioItems.each( function(i) {
