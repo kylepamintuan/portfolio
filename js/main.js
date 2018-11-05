@@ -134,7 +134,19 @@
         // bind click event
         $folioItems.each(function(i) {
 
-            $(this).on('click', function(e) {
+            $(this).find(".project-info-button").on('click', function(e) {
+                e.preventDefault();
+                var options = {
+                    index: i,
+                    showHideOpacity: true
+                }
+
+                // initialize PhotoSwipe
+                var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+                lightBox.init();
+            });
+
+            $(this).find(".item-folio__thumb").on('click', function(e) {
                 e.preventDefault();
                 var options = {
                     index: i,

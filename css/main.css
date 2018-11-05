@@ -2566,7 +2566,7 @@ html.no-csstransitions .home-content__main {
   margin-bottom: 1.5rem;
 }
 .pswp__caption .project-links {
-  font-family: "metropolis-medium", sans-serif;
+  font-family: "metropolis-regular", sans-serif;
   font-size: 1.7rem;
   color: #663300;
 }
@@ -2671,7 +2671,6 @@ html.no-csstransitions .home-content__main {
   transition: all 0.5s ease-in-out;
 }
 .item-folio__project-links a {
-  z-index: 3;
   color: black;
   padding: 0 1.5rem;
   position: relative;
