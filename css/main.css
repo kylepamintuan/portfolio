@@ -187,8 +187,9 @@ p img {
 p.lead {
   font-family: "metropolis-regular", sans-serif;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.9rem;
   line-height: 1.75;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   color: rgba(85, 85, 85, 0.95);
 }
